@@ -1,0 +1,66 @@
+[
+  {
+    "id": "2bbd1c2e-0d0c-4d72-9a0a-4df3b12b6f01",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide1.tsx",
+    "title": "Tidyline",
+    "description": "A quieter way to organize files.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "2bbd1c2e-0d0c-4d72-9a0a-4df3b12b6f02",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide2.tsx",
+    "title": "Manual file cleanup creates clutter and risk",
+    "description": "The problem Tidyline addresses.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "2bbd1c2e-0d0c-4d72-9a0a-4df3b12b6f03",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide3.tsx",
+    "title": "Scan. Understand. Preview. Organize.",
+    "description": "The Tidyline workflow.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "2bbd1c2e-0d0c-4d72-9a0a-4df3b12b6f04",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide4.tsx",
+    "title": "Rules that make sorting predictable",
+    "description": "Type and filename rules.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "2bbd1c2e-0d0c-4d72-9a0a-4df3b12b6f05",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide5.tsx",
+    "title": "Duplicate cleanup with guardrails",
+    "description": "Hash comparison and safe deletion.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "2bbd1c2e-0d0c-4d72-9a0a-4df3b12b6f06",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide6.tsx",
+    "title": "A schedule that stays out of the way",
+    "description": "Daily and weekly automation.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "2bbd1c2e-0d0c-4d72-9a0a-4df3b12b6f07",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide7.tsx",
+    "title": "Simple architecture, ready to extend",
+    "description": "React, FastAPI, storage, and the AWS path.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "2bbd1c2e-0d0c-4d72-9a0a-4df3b12b6f08",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide8.tsx",
+    "title": "From tidy folder to dependable service",
+    "description": "The next deployment steps.",
+    "speakerNotes": ""
+  }
+]

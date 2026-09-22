@@ -1,0 +1,28 @@
+kind = "slides"
+previewPath = "/tidyline-deck/"
+title = "Tidyline Project Overview"
+description = "A project overview deck for Tidyline, a Python FastAPI file organizer that sorts files by type and name pattern, removes hash-identical duplicates, and runs on a daily or weekly schedule."
+version = "1.0.0"
+id = "artifacts/tidyline-deck"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/tidyline-deck/" ]
+localPort = 18807
+
+[services.development]
+run = "pnpm --filter @workspace/tidyline-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/tidyline-deck", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/tidyline-deck/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18807"
+BASE_PATH = "/tidyline-deck/"

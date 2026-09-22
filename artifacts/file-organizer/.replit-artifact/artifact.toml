@@ -1,0 +1,41 @@
+kind = "web"
+previewPath = "/"
+title = "File Organizer"
+description = "A browser-based file organizer that scans a local folder through a Python API, sorts files by type and name patterns, detects hash-identical duplicates, and supports optional daily or weekly automation."
+version = "1.0.0"
+id = "artifacts/file-organizer"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23611
+
+[services.development]
+run = "pnpm --filter @workspace/file-organizer run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/file-organizer", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/file-organizer/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23611"
+BASE_PATH = "/"
+
+[[services]]
+localPort = 8000
+name = "api"
+paths = ["/organizer-api"]
+
+[services.development]
+run = "cd /home/runner/workspace/artifacts/file-organizer/backend && uv run uvicorn main:app --host 0.0.0.0 --port $PORT"
+
+[services.production]
+
+[services.production.run]
+args = ["uv", "run", "uvicorn", "main:app", "--app-dir", "artifacts/file-organizer/backend", "--host", "0.0.0.0", "--port", "8000"]

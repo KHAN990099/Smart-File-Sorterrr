@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "frequency": "daily",
+  "time": "23:59",
+  "weekday": "monday",
+  "folder_path": "",
+  "last_run": null,
+  "next_run": null
+}
